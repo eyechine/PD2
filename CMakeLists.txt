@@ -26,18 +26,21 @@ include (UrhoCommon)
 # Define target name
 set (TARGET_NAME PD2)
 
-#set(SRCS 
+#set(SRCS
 #	main.cpp
 #)
 
 #set(HDRS
 #)
 
-#set(SOURCES_FILES ${SRCS} ${HDRS})
 
 #set(CMAKE_CXX_STANDARD 11)
 
 define_source_files()
+
+#set(SOURCES_FILES ${SRCS} ${HDRS})
+
+define_resource_dirs (GLOB_PATTERNS ${CMAKE_SOURCE_DIR}/bin/Data ${CMAKE_SOURCE_DIR}/bin/CoreData)
 
 # Setup target with resource copying
 setup_main_executable ()
