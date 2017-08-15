@@ -1,5 +1,0 @@
-voleur
-archer
-mago
-chevalier/berseker
-explorateur
